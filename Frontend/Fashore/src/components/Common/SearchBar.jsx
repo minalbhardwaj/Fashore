@@ -31,19 +31,19 @@ const SearchBar = () => {
                 
                 className='absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800
                 '>
-                    <HiMagnifyingGlass className='h-6 w-6'/>
+                    <HiMagnifyingGlass className='h-6 w-6 '/>
                 </button>
                 </div>
                 {/* close button */}
                 <button type='button' 
                 onClick={handleSearchToggle}
-                className='absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800 '>
+                className='absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800 cursor-pointer'>
                     <HiMiniXMark className='h-6 w-6'/>
                 </button>
             </form>
         ): (
             <button onClick={handleSearchToggle}>
-                <HiMagnifyingGlass className='h-6 w-6'/>
+                <HiMagnifyingGlass className='h-6 w-6 cursor-pointer'/>
             </button>
         )}
     </div>
