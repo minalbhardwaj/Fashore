@@ -1,0 +1,19 @@
+# Ensure consistent line endings (use LF in repo)
+* text=auto eol=lf
+
+# Mark common binary files as binary so Git won't try to diff them
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.exe binary
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Optional: handle JavaScript/JSON files explicitly
+*.js text
+*.json text
+*.md text
