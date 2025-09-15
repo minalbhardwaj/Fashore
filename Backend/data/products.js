@@ -1,31 +1,108 @@
 const products = [
   {
-    name: "Classic Oxford Button-Down Shirt",
+    name: "Polo T-Shirt with Ribbed Collar",
     description:
-      "This classic Oxford shirt is tailored for a polished yet casual look. Crafted from high-quality cotton, it features a button-down collar and a comfortable, slightly relaxed fit. Perfect for both formal and casual occasions, it comes with long sleeves, a button placket, and a yoke at the back. The shirt is finished with a gently rounded hem and adjustable button cuffs.",
-    price: 39.99,
-    discountPrice: 34.99,
-    countInStock: 20,
-    sku: "OX-SH-001",
+      "A wardrobe classic, this polo t-shirt features a ribbed collar and cuffs. Made from 100% cotton, it offers breathability and comfort throughout the day. Tailored in a slim fit with a button placket at the neckline.",
+    price: 24.99,
+    discountPrice: 19.99,
+    countInStock: 50,
+    sku: "POLO-TSH-006",
     category: "Top Wear",
-    brand: "Urban Threads",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Red", "Blue", "Yellow"],
-    collections: "Business Casual",
+    brand: "Polo Classics",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["White", "Navy", "Red"],
+    collections: "Casual Wear",
     material: "Cotton",
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=39",
-        altText: "Classic Oxford Button-Down Shirt Front View",
+        url: "https://images.pexels.com/photos/2531355/pexels-photo-2531355.jpeg",
+        altText: "Polo T-Shirt Front View",
       },
       {
-        url: "https://picsum.photos/500/500?random=40",
-        altText: "Classic Oxford Button-Down Shirt Back View",
+        url: "https://picsum.photos/500/500?random=4",
+        altText: "Polo T-Shirt Back View",
+      },
+    ],
+    rating: 4.3,
+    numReviews: 22,
+  },
+  {
+    name: "Slim Fit Joggers",
+    description:
+      "Slim-fit joggers with an elasticated drawstring waist. Features ribbed hems and side pockets. Ideal for casual outings or workouts.",
+    price: 40,
+    discountPrice: 35,
+    countInStock: 20,
+    sku: "BW-001",
+    category: "Bottom Wear",
+    brand: "ActiveWear",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Black", "Gray", "Navy"],
+    collections: "Casual Collection",
+    material: "Cotton Blend",
+    gender: "Men",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/17792781/pexels-photo-17792781.jpeg",
+        altText: "Slim Fit Joggers Front View",
       },
     ],
     rating: 4.5,
     numReviews: 12,
+  },
+  
+  {
+    name: "Casual Denim Shirt",
+    description:
+      "This casual denim shirt is made from lightweight cotton denim. It features a regular fit, snap buttons, and a straight hem. With Western-inspired details, this shirt is perfect for layering or wearing solo.",
+    price: 49.99,
+    discountPrice: 44.99,
+    countInStock: 15,
+    sku: "CAS-DEN-003",
+    category: "Top Wear",
+    brand: "Street Style",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["Light Blue", "Dark Wash"],
+    collections: "Casual Wear",
+    material: "Denim",
+    gender: "Men",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/27940275/pexels-photo-27940275.jpeg",
+        altText: "Casual Denim Shirt Front View",
+      },
+      {
+        url: "https://picsum.photos/500/500?random=44",
+        altText: "Casual Denim Shirt Back View",
+      },
+    ],
+    rating: 4.6,
+    numReviews: 8,
+  },
+  {
+    name: "Chino Pants",
+    description:
+      "Slim-fit chino pants made from stretch cotton twill. Features a button closure and front and back pockets. Ideal for both casual and semi-formal wear.",
+    price: 55,
+    discountPrice: 48,
+    countInStock: 40,
+    sku: "BW-005",
+    category: "Bottom Wear",
+    brand: "CasualLook",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Beige", "Navy", "Black"],
+    collections: "Smart Casual Collection",
+    material: "Cotton",
+    gender: "Men",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/33886372/pexels-photo-33886372.jpeg",
+        altText: "Chino Pants Front View",
+      },
+    ],
+    rating: 4.8,
+    numReviews: 15,
   },
   {
     name: "Slim-Fit Stretch Shirt",
@@ -44,7 +121,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=41",
+        url: "https://images.pexels.com/photos/27442874/pexels-photo-27442874.jpeg",
         altText: "Slim-Fit Stretch Shirt Front View",
       },
       {
@@ -54,34 +131,6 @@ const products = [
     ],
     rating: 4.8,
     numReviews: 15,
-  },
-  {
-    name: "Casual Denim Shirt",
-    description:
-      "This casual denim shirt is made from lightweight cotton denim. It features a regular fit, snap buttons, and a straight hem. With Western-inspired details, this shirt is perfect for layering or wearing solo.",
-    price: 49.99,
-    discountPrice: 44.99,
-    countInStock: 15,
-    sku: "CAS-DEN-003",
-    category: "Top Wear",
-    brand: "Street Style",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["Light Blue", "Dark Wash"],
-    collections: "Casual Wear",
-    material: "Denim",
-    gender: "Men",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=43",
-        altText: "Casual Denim Shirt Front View",
-      },
-      {
-        url: "https://picsum.photos/500/500?random=44",
-        altText: "Casual Denim Shirt Back View",
-      },
-    ],
-    rating: 4.6,
-    numReviews: 8,
   },
   {
     name: "Printed Resort Shirt",
@@ -100,7 +149,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=45",
+        url: "https://images.pexels.com/photos/31962262/pexels-photo-31962262.jpeg  ",
         altText: "Printed Resort Shirt Front View",
       },
       {
@@ -110,6 +159,34 @@ const products = [
     ],
     rating: 4.4,
     numReviews: 10,
+  },
+  {
+    name: "Classic Oxford Button-Down Shirt",
+    description:
+      "This classic Oxford shirt is tailored for a polished yet casual look. Crafted from high-quality cotton, it features a button-down collar and a comfortable, slightly relaxed fit. Perfect for both formal and casual occasions, it comes with long sleeves, a button placket, and a yoke at the back. The shirt is finished with a gently rounded hem and adjustable button cuffs.",
+    price: 39.99,
+    discountPrice: 34.99,
+    countInStock: 20,
+    sku: "OX-SH-001",
+    category: "Top Wear",
+    brand: "Urban Threads",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["Red", "Blue", "Yellow"],
+    collections: "Business Casual",
+    material: "Cotton",
+    gender: "Men",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/32817564/pexels-photo-32817564.jpeg",
+        altText: "Classic Oxford Button-Down Shirt Front View",
+      },
+      {
+        url: "https://picsum.photos/500/500?random=40",
+        altText: "Classic Oxford Button-Down Shirt Back View",
+      },
+    ],
+    rating: 4.5,
+    numReviews: 12,
   },
   {
     name: "Slim-Fit Easy-Iron Shirt",
@@ -128,45 +205,14 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=47",
-        altText: "Slim-Fit Easy-Iron Shirt Front View",
-      },
-      {
-        url: "https://picsum.photos/500/500?random=2",
+        url: "https://images.pexels.com/photos/33855568/pexels-photo-33855568.jpeg",
         altText: "Slim-Fit Easy-Iron Shirt Front View",
       },
     ],
     rating: 5,
     numReviews: 14,
   },
-  {
-    name: "Polo T-Shirt with Ribbed Collar",
-    description:
-      "A wardrobe classic, this polo t-shirt features a ribbed collar and cuffs. Made from 100% cotton, it offers breathability and comfort throughout the day. Tailored in a slim fit with a button placket at the neckline.",
-    price: 24.99,
-    discountPrice: 19.99,
-    countInStock: 50,
-    sku: "POLO-TSH-006",
-    category: "Top Wear",
-    brand: "Polo Classics",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["White", "Navy", "Red"],
-    collections: "Casual Wear",
-    material: "Cotton",
-    gender: "Men",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=3",
-        altText: "Polo T-Shirt Front View",
-      },
-      {
-        url: "https://picsum.photos/500/500?random=4",
-        altText: "Polo T-Shirt Back View",
-      },
-    ],
-    rating: 4.3,
-    numReviews: 22,
-  },
+  
   {
     name: "Oversized Graphic T-Shirt",
     description:
@@ -184,7 +230,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=5",
+        url: "https://images.pexels.com/photos/5760630/pexels-photo-5760630.jpeg",
         altText: "Oversized Graphic T-Shirt Front View",
       },
     ],
@@ -208,7 +254,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=6",
+        url: "https://images.pexels.com/photos/9648924/pexels-photo-9648924.jpeg",
         altText: "Regular-Fit Henley Shirt Front View",
       },
     ],
@@ -232,7 +278,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=7",
+        url: "https://images.pexels.com/photos/33863643/pexels-photo-33863643.jpeg",
         altText: "Long-Sleeve Thermal Tee Front View",
       },
     ],
@@ -256,37 +302,14 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=8",
+        url: "https://images.pexels.com/photos/20550934/pexels-photo-20550934.jpeg",
         altText: "V-Neck Classic T-Shirt Front View",
       },
     ],
     rating: 4.7,
     numReviews: 28,
   },
-  {
-    name: "Slim Fit Joggers",
-    description:
-      "Slim-fit joggers with an elasticated drawstring waist. Features ribbed hems and side pockets. Ideal for casual outings or workouts.",
-    price: 40,
-    discountPrice: 35,
-    countInStock: 20,
-    sku: "BW-001",
-    category: "Bottom Wear",
-    brand: "ActiveWear",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Black", "Gray", "Navy"],
-    collections: "Casual Collection",
-    material: "Cotton Blend",
-    gender: "Men",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=9",
-        altText: "Slim Fit Joggers Front View",
-      },
-    ],
-    rating: 4.5,
-    numReviews: 12,
-  },
+  
   {
     name: "Cargo Joggers",
     description:
@@ -304,7 +327,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=10",
+        url: "https://images.pexels.com/photos/5572571/pexels-photo-5572571.jpeg",
         altText: "Cargo Joggers Front View",
       },
     ],
@@ -328,7 +351,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=11",
+        url: "https://images.pexels.com/photos/17221213/pexels-photo-17221213.jpeg",
         altText: "Tapered Sweatpants Front View",
       },
     ],
@@ -352,37 +375,14 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=12",
+        url: "https://images.pexels.com/photos/33839900/pexels-photo-33839900.jpeg",
         altText: "Denim Jeans Front View",
       },
     ],
     rating: 4.6,
     numReviews: 22,
   },
-  {
-    name: "Chino Pants",
-    description:
-      "Slim-fit chino pants made from stretch cotton twill. Features a button closure and front and back pockets. Ideal for both casual and semi-formal wear.",
-    price: 55,
-    discountPrice: 48,
-    countInStock: 40,
-    sku: "BW-005",
-    category: "Bottom Wear",
-    brand: "CasualLook",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Beige", "Navy", "Black"],
-    collections: "Smart Casual Collection",
-    material: "Cotton",
-    gender: "Men",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=13",
-        altText: "Chino Pants Front View",
-      },
-    ],
-    rating: 4.8,
-    numReviews: 15,
-  },
+  
   {
     name: "Track Pants",
     description:
@@ -400,7 +400,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=14",
+        url: "https://images.pexels.com/photos/6311478/pexels-photo-6311478.jpeg",
         altText: "Track Pants Front View",
       },
     ],
@@ -424,7 +424,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=15",
+        url: "https://images.pexels.com/photos/5103042/pexels-photo-5103042.jpeg",
         altText: "Slim Fit Trousers Front View",
       },
     ],
@@ -448,7 +448,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=16",
+        url: "https://images.pexels.com/photos/15647646/pexels-photo-15647646.jpeg",
         altText: "Cargo Pants Front View",
       },
     ],
@@ -472,7 +472,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=17",
+        url: "https://images.pexels.com/photos/3622614/pexels-photo-3622614.jpeg",
         altText: "Relaxed Fit Sweatpants Front View",
       },
     ],
@@ -496,206 +496,15 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=18",
+        url: "https://images.pexels.com/photos/1897886/pexels-photo-1897886.jpeg",
         altText: "Formal Dress Pants Front View",
       },
     ],
     rating: 4.9,
     numReviews: 8,
   },
-  {
-    name: "High-Waist Skinny Jeans",
-    description:
-      "High-waist skinny jeans in stretch denim with a button and zip fly. Features a flattering fit that hugs your curves and enhances your silhouette.",
-    price: 50,
-    discountPrice: 45,
-    countInStock: 30,
-    sku: "BW-W-001",
-    category: "Bottom Wear",
-    brand: "DenimStyle",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    colors: ["Dark Blue", "Black", "Light Blue"],
-    collections: "Denim Collection",
-    material: "Denim",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=19",
-        altText: "High-Waist Skinny Jeans",
-      },
-    ],
-    rating: 4.8,
-    numReviews: 20,
-  },
-  {
-    name: "Wide-Leg Trousers",
-    description:
-      "Flowy, wide-leg trousers with a high waist and side pockets. Perfect for an elegant look that combines comfort and style.",
-    price: 60,
-    discountPrice: 55,
-    countInStock: 25,
-    sku: "BW-W-002",
-    category: "Bottom Wear",
-    brand: "ElegantWear",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Beige", "Black", "White"],
-    collections: "Formal Collection",
-    material: "Polyester",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=20",
-        altText: "Wide-Leg Trousers Front View",
-      },
-    ],
-    rating: 4.7,
-    numReviews: 15,
-  },
-  {
-    name: "Stretch Leggings",
-    description:
-      "Soft, stretch leggings in a high-rise style. Perfect for lounging, working out, or casual wear, with a smooth fit that flatters your body.",
-    price: 25,
-    discountPrice: 20,
-    countInStock: 40,
-    sku: "BW-W-003",
-    category: "Bottom Wear",
-    brand: "ComfyFit",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Black", "Gray", "Navy"],
-    collections: "Activewear Collection",
-    material: "Cotton Blend",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=21",
-        altText: "Stretch Leggings Front View",
-      },
-    ],
-    rating: 4.5,
-    numReviews: 30,
-  },
-  {
-    name: "Pleated Midi Skirt",
-    description:
-      "Elegant pleated midi skirt with a high waistband and soft fabric that drapes beautifully. Ideal for both formal and casual occasions.",
-    price: 55,
-    discountPrice: 50,
-    countInStock: 20,
-    sku: "BW-W-004",
-    category: "Bottom Wear",
-    brand: "ChicStyle",
-    sizes: ["S", "M", "L"],
-    colors: ["Pink", "Navy", "Black"],
-    collections: "Spring Collection",
-    material: "Polyester",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=22",
-        altText: "Pleated Midi Skirt Front View",
-      },
-    ],
-    rating: 4.6,
-    numReviews: 18,
-  },
-  {
-    name: "Flared Palazzo Pants",
-    description:
-      "High-waist palazzo pants with a loose, flowing fit. Comfortable and stylish, making them perfect for casual outings or beach days.",
-    price: 45,
-    discountPrice: 40,
-    countInStock: 35,
-    sku: "BW-W-005",
-    category: "Bottom Wear",
-    brand: "BreezyVibes",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["White", "Beige", "Light Blue"],
-    collections: "Summer Collection",
-    material: "Linen Blend",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=23",
-        altText: "Flared Palazzo Pants Front View",
-      },
-    ],
-    rating: 4.4,
-    numReviews: 22,
-  },
-  {
-    name: "High-Rise Joggers",
-    description:
-      "Comfortable high-rise joggers with an elastic waistband and drawstring for a perfect fit. Great for lounging or working out.",
-    price: 40,
-    discountPrice: 35,
-    countInStock: 30,
-    sku: "BW-W-006",
-    category: "Bottom Wear",
-    brand: "ActiveWear",
-    sizes: ["XS", "S", "M", "L"],
-    colors: ["Black", "Gray", "Pink"],
-    collections: "Loungewear Collection",
-    material: "Cotton Blend",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=24",
-        altText: "High-Rise Joggers Front View",
-      },
-    ],
-    rating: 4.3,
-    numReviews: 25,
-  },
-  {
-    name: "Paperbag Waist Shorts",
-    description:
-      "Stylish paperbag waist shorts with a belted waist and wide legs. Perfect for summer outings and keeping cool in style.",
-    price: 35,
-    discountPrice: 30,
-    countInStock: 20,
-    sku: "BW-W-007",
-    category: "Bottom Wear",
-    brand: "SunnyStyle",
-    sizes: ["S", "M", "L"],
-    colors: ["White", "Khaki", "Blue"],
-    collections: "Summer Collection",
-    material: "Cotton",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=25",
-        altText: "Paperbag Waist Shorts Front View",
-      },
-    ],
-    rating: 4.5,
-    numReviews: 19,
-  },
-  {
-    name: "Stretch Denim Shorts",
-    description:
-      "Comfortable stretch denim shorts with a high-waisted fit and raw hem. Perfect for pairing with your favorite tops during warmer months.",
-    price: 40,
-    discountPrice: 35,
-    countInStock: 25,
-    sku: "BW-W-008",
-    category: "Bottom Wear",
-    brand: "DenimStyle",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Blue", "Black", "White"],
-    collections: "Denim Collection",
-    material: "Denim",
-    gender: "Women",
-    images: [
-      {
-        url: "https://picsum.photos/500/500?random=26",
-        altText: "Stretch Denim Shorts Front View",
-      },
-    ],
-    rating: 4.7,
-    numReviews: 15,
-  },
-  {
+ 
+   {
     name: "Culottes",
     description:
       "Wide-leg culottes with a flattering high waist and cropped length. The perfect blend of comfort and style for any casual occasion.",
@@ -712,7 +521,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=27",
+        url: "https://images.pexels.com/photos/17243661/pexels-photo-17243661.jpeg",
         altText: "Culottes Front View",
       },
     ],
@@ -736,7 +545,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=28",
+        url: "https://images.pexels.com/photos/6968312/pexels-photo-6968312.jpeg",
         altText: "Classic Pleated Trousers Front View",
       },
     ],
@@ -760,7 +569,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=29",
+        url: "https://images.pexels.com/photos/13069199/pexels-photo-13069199.jpeg",
         altText: "Knitted Cropped Top",
       },
     ],
@@ -784,13 +593,110 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=30",
+        url: "https://images.pexels.com/photos/4715067/pexels-photo-4715067.jpeg",
         altText: "Boho Floral Blouse",
       },
     ],
     rating: 4.7,
     numReviews: 20,
   },
+  {
+    name: "Flared Palazzo Pants",
+    description:
+      "High-waist palazzo pants with a loose, flowing fit. Comfortable and stylish, making them perfect for casual outings or beach days.",
+    price: 45,
+    discountPrice: 40,
+    countInStock: 35,
+    sku: "BW-W-005",
+    category: "Bottom Wear",
+    brand: "BreezyVibes",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["White", "Beige", "Light Blue"],
+    collections: "Summer Collection",
+    material: "Linen Blend",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/19813570/pexels-photo-19813570.jpeg",
+        altText: "Flared Palazzo Pants Front View",
+      },
+    ],
+    rating: 4.4,
+    numReviews: 22,
+  },
+  {
+    name: "High-Rise Joggers",
+    description:
+      "Comfortable high-rise joggers with an elastic waistband and drawstring for a perfect fit. Great for lounging or working out.",
+    price: 40,
+    discountPrice: 35,
+    countInStock: 30,
+    sku: "BW-W-006",
+    category: "Bottom Wear",
+    brand: "ActiveWear",
+    sizes: ["XS", "S", "M", "L"],
+    colors: ["Black", "Gray", "Pink"],
+    collections: "Loungewear Collection",
+    material: "Cotton Blend",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/16297702/pexels-photo-16297702.jpeg",
+        altText: "High-Rise Joggers Front View",
+      },
+    ],
+    rating: 4.3,
+    numReviews: 25,
+  },
+  {
+    name: "Paperbag Waist Shorts",
+    description:
+      "Stylish paperbag waist shorts with a belted waist and wide legs. Perfect for summer outings and keeping cool in style.",
+    price: 35,
+    discountPrice: 30,
+    countInStock: 20,
+    sku: "BW-W-007",
+    category: "Bottom Wear",
+    brand: "SunnyStyle",
+    sizes: ["S", "M", "L"],
+    colors: ["White", "Khaki", "Blue"],
+    collections: "Summer Collection",
+    material: "Cotton",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/4917816/pexels-photo-4917816.jpeg",
+        altText: "Paperbag Waist Shorts Front View",
+      },
+    ],
+    rating: 4.5,
+    numReviews: 19,
+  },
+  {
+    name: "Stretch Denim Shorts",
+    description:
+      "Comfortable stretch denim shorts with a high-waisted fit and raw hem. Perfect for pairing with your favorite tops during warmer months.",
+    price: 40,
+    discountPrice: 35,
+    countInStock: 25,
+    sku: "BW-W-008",
+    category: "Bottom Wear",
+    brand: "DenimStyle",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Blue", "Black", "White"],
+    collections: "Denim Collection",
+    material: "Denim",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/20782400/pexels-photo-20782400.jpeg",
+        altText: "Stretch Denim Shorts Front View",
+      },
+    ],
+    rating: 4.7,
+    numReviews: 15,
+  },
+ 
   {
     name: "Casual T-Shirt",
     description:
@@ -808,7 +714,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=31",
+        url: "https://images.pexels.com/photos/3053824/pexels-photo-3053824.jpeg  ",
         altText: "Casual T-Shirt",
       },
     ],
@@ -832,7 +738,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=32",
+        url: "https://images.pexels.com/photos/13042601/pexels-photo-13042601.jpeg",
         altText: "Off-Shoulder Top",
       },
     ],
@@ -856,7 +762,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=33",
+        url: "https://images.pexels.com/photos/2097629/pexels-photo-2097629.jpeg",
         altText: "Lace-Trimmed Cami Top",
       },
     ],
@@ -880,7 +786,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=34",
+        url: "https://images.pexels.com/photos/28994264/pexels-photo-28994264.jpeg",
         altText: "Graphic Print Tee",
       },
     ],
@@ -904,7 +810,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=35",
+        url: "https://images.pexels.com/photos/13058772/pexels-photo-13058772.jpeg",
         altText: "Ribbed Long-Sleeve Top",
       },
     ],
@@ -928,7 +834,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=36",
+        url: "https://images.pexels.com/photos/15665815/pexels-photo-15665815.jpeg",
         altText: "Ruffle-Sleeve Blouse",
       },
     ],
@@ -952,7 +858,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=37",
+        url: "https://images.pexels.com/photos/33888195/pexels-photo-33888195.jpeg",
         altText: "Classic Button-Up Shirt",
       },
     ],
@@ -963,17 +869,6 @@ const products = [
     name: "V-Neck Wrap Top",
     description:
       "A chic v-neck wrap top with a tie waist. Its elegant style makes it perfect for both casual and semi-formal occasions.",
-
-
-
-
-
-
-
-
-
-
-
 
     price: 50,
     discountPrice: 45,
@@ -988,12 +883,108 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=38",
+        url: "https://images.pexels.com/photos/12670695/pexels-photo-12670695.jpeg",
         altText: "V-Neck Wrap Top",
       },
     ],
     rating: 4.7,
     numReviews: 22,
+  },
+   {
+    name: "High-Waist Skinny Jeans",
+    description:
+      "High-waist skinny jeans in stretch denim with a button and zip fly. Features a flattering fit that hugs your curves and enhances your silhouette.",
+    price: 50,
+    discountPrice: 45,
+    countInStock: 30,
+    sku: "BW-W-001",
+    category: "Bottom Wear",
+    brand: "DenimStyle",
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: ["Dark Blue", "Black", "Light Blue"],
+    collections: "Denim Collection",
+    material: "Denim",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/8547453/pexels-photo-8547453.jpeg",
+        altText: "High-Waist Skinny Jeans",
+      },
+    ],
+    rating: 4.8,
+    numReviews: 20,
+  },
+  {
+    name: "Wide-Leg Trousers",
+    description:
+      "Flowy, wide-leg trousers with a high waist and side pockets. Perfect for an elegant look that combines comfort and style.",
+    price: 60,
+    discountPrice: 55,
+    countInStock: 25,
+    sku: "BW-W-002",
+    category: "Bottom Wear",
+    brand: "ElegantWear",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Beige", "Black", "White"],
+    collections: "Formal Collection",
+    material: "Polyester",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/8330427/pexels-photo-8330427.jpeg",
+        altText: "Wide-Leg Trousers Front View",
+      },
+    ],
+    rating: 4.7,
+    numReviews: 15,
+  },
+  {
+    name: "Stretch Leggings",
+    description:
+      "Soft, stretch leggings in a high-rise style. Perfect for lounging, working out, or casual wear, with a smooth fit that flatters your body.",
+    price: 25,
+    discountPrice: 20,
+    countInStock: 40,
+    sku: "BW-W-003",
+    category: "Bottom Wear",
+    brand: "ComfyFit",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Black", "Gray", "Navy"],
+    collections: "Activewear Collection",
+    material: "Cotton Blend",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/2774172/pexels-photo-2774172.jpeg",
+        altText: "Stretch Leggings Front View",
+      },
+    ],
+    rating: 4.5,
+    numReviews: 30,
+  },
+  {
+    name: "Pleated Midi Skirt",
+    description:
+      "Elegant pleated midi skirt with a high waistband and soft fabric that drapes beautifully. Ideal for both formal and casual occasions.",
+    price: 55,
+    discountPrice: 50,
+    countInStock: 20,
+    sku: "BW-W-004",
+    category: "Bottom Wear",
+    brand: "ChicStyle",
+    sizes: ["S", "M", "L"],
+    colors: ["Pink", "Navy", "Black"],
+    collections: "Spring Collection",
+    material: "Polyester",
+    gender: "Women",
+    images: [
+      {
+        url: "https://images.pexels.com/photos/17500750/pexels-photo-17500750.jpeg",
+        altText: "Pleated Midi Skirt Front View",
+      },
+    ],
+    rating: 4.6,
+    numReviews: 18,
   },
 ];
 
