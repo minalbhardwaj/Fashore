@@ -4,11 +4,14 @@
     {
       "src": "Frontend/Fashore/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": {
+        "distDir": "dist",
+        "buildCommand": "npm install --include=dev && npm run build"
+      }
     }
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "source": "/.*", "destination": "index.html" }
+    { "source": "/.*", "destination": "/index.html" }
   ]
 }
