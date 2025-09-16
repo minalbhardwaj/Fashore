@@ -12,6 +12,6 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "source": "/.*", "destination": "/index.html" }
+    { "src": "/.*", "destination": "/index.html" }
   ]
 }
