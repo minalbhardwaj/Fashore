@@ -25,18 +25,26 @@ Database: MongoDB Atlas
 Deployment: Vercel (Backend), Netlify/Vercel (Frontend)
 
 📂 Project Setup
-Clone the Repository
+Clone the Repository -
+
 git clone https://github.com/your-username/fashore.git
+
 cd fashore
 
-Backend Setup
+Backend Setup -
+
 cd Backend
+
 npm install
+
 npm run dev
 
-Frontend Setup
+Frontend Setup -
+
 cd Frontend
+
 npm install
+
 npm start
 
 💡 Skills Learned
