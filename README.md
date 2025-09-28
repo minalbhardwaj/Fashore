@@ -1,4 +1,5 @@
 Fashore – Online Fashion Store
+🔗 Live Demo: https://fashorefrontend.vercel.app/
 
 Fashore is a full-stack MERN e-commerce application designed for a smooth and modern shopping experience. It allows users to browse fashion collections, add products to the cart, and securely checkout, while admins can manage inventory and orders through a dedicated dashboard.
 
